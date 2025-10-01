@@ -84,6 +84,8 @@ export default function DashboardPage() {
         },
       });
 
+      console.log('\n\n\n\n\n AGENT DATA: ', agentData, '\n\n\n\n\n')
+
       if (agentError) {
         console.error("Error invoking agent function:", agentError);
         alert("Failed to generate ideas. Please try again.");
