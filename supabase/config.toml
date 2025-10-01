@@ -1,0 +1,8 @@
+# Supabase Edge Functions Configuration
+
+[functions.agent]
+verify_jwt = false  # Set to true if you want to require authentication
+
+
+
+
