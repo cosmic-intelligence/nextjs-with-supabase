@@ -1,6 +1,7 @@
 # Station & Client Code Interview Project
 
 App: [https://nextjs-with-supabase-git-main-cosmic-intelligences-projects.vercel.app](https://nextjs-with-supabase-git-main-cosmic-intelligences-projects.vercel.app)
+
 Code: [https://github.com/cosmic-intelligence/nextjs-with-supabase](https://github.com/cosmic-intelligence/nextjs-with-supabase)
 
 This is a lightweight concept generator for a Fortune 500 marketer to quickly ideate and develop marketing concepts. The app centers on a Compose screen and a Session view. You interact with an agent that can:
