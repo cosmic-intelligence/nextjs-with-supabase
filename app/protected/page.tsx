@@ -112,8 +112,8 @@ export default function DashboardPage() {
             onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setPrompt(e.target.value)}
             className="min-h-[120px] text-base resize-none border-0 bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 placeholder:text-muted-foreground/60"
           />
-          <div className="flex items-center justify-between gap-2 pt-3">
-            <div className="flex items-center gap-2">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 pt-3">
+            <div className="flex flex-wrap items-center gap-2">
               <Dialog open={settingsOpen} onOpenChange={setSettingsOpen}>
                 <DialogTrigger asChild>
                   <Button
@@ -143,7 +143,7 @@ export default function DashboardPage() {
                 </DialogContent>
               </Dialog>
 
-              <div className="flex items-center gap-1.5">
+              <div className="flex flex-wrap items-center gap-1.5">
                 {context.product.name.trim() ? (
                   <Badge variant="secondary" className="text-xs">
                     {context.product.name}
@@ -169,7 +169,7 @@ export default function DashboardPage() {
               size="lg"
               onClick={handleGenerate}
               disabled={!prompt.trim() || isGenerating}
-              className="rounded-full px-6"
+              className="rounded-full px-6 w-full sm:w-auto"
             >
               {isGenerating ? (
                 <Loader2 className="h-4 w-4 mr-2 animate-spin" />
